@@ -1,0 +1,24 @@
+apply plugin: 'java'
+
+/*
+repositories {
+  mavenCentral()
+}
+*/
+
+/*
+uploadArchives {
+    repositories {
+       flatDir {
+           dirs 'repos'
+       }
+    }
+}
+*/
+
+jar {
+  manifest {
+    attributes 'Main-Class': 'org.colluvio.hello.HelloWorld'
+  }
+}
+
